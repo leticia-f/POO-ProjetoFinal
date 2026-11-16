@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-net --allow-env --allow-read --allow-write src/main.ts",
+    "test": "deno test --allow-read --allow-write"
+  },
+  "imports": {
+    "express": "npm:express@^5.3.0",
+    "@types/express": "npm:@types/express@^5.0.6"
+  }
+}
