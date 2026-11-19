@@ -11,6 +11,36 @@ Projeto final de Programação Orientada a Objetos (POO), feito em TypeScript co
 - **Frontend:** React + Vite (planejado)
 - **Persistência:** padrão Repository com arquivo JSON e Prisma + SQLite (planejado)
 
+## Fluxo de Git
+
+Sempre fazer atualizações em branches, nunca na main.
+Uma branch por tarefa, com nome no formato `prefixo/assunto`, por exemplo `feat/rotas-produtos` ou `fix/estoques`.
+
+Prefixo | Situação
+--- | ---
+`feat` | Funcionalidade nova
+`fix` | Correção
+`test` | Testes
+`doc` | Documentação
+
+### Passo a passo de uma tarefa (exemplo)
+
+```bash
+git checkout main
+git pull
+git checkout -b semana1/equipe-e-eventos
+
+# trabalhe e teste
+deno test
+deno check src/main.ts
+
+git add .
+git commit -m "feat: adiciona Equipe e eventos"
+git push -u origin semana1/equipe-e-eventos
+```
+
+Depois abra o pull request no GitHub, peça a revisão e faça o merge quando for aprovado. Em seguida, volte à `main` e rode `git pull` antes da próxima tarefa.
+
 ## Como executar
 
 ### Pré-requisitos
