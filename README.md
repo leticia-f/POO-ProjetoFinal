@@ -28,7 +28,7 @@ Prefixo | Situação
 ```bash
 git checkout main
 git pull
-git checkout -b semana1/equipe-e-eventos
+git checkout -b feat/equipe-e-eventos
 
 # trabalhe e teste
 deno test
@@ -36,7 +36,7 @@ deno check src/main.ts
 
 git add .
 git commit -m "feat: adiciona Equipe e eventos"
-git push -u origin semana1/equipe-e-eventos
+git push -u origin feat/equipe-e-eventos
 ```
 
 Depois abra o pull request no GitHub, peça a revisão e faça o merge quando for aprovado. Em seguida, volte à `main` e rode `git pull` antes da próxima tarefa.
