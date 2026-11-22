@@ -1,0 +1,1 @@
+export type Receita = Record<string, number>;
