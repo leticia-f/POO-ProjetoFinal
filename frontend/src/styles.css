@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #2f281f;
+  background: #f6f3ed;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { font: inherit; }
+.cabecalho {
+  background: #30271f;
+  color: #f7f2e8;
+  min-height: 80px;
+  padding: 20px max(24px, calc((100vw - 1040px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.marca { font-family: "Playfair Display", serif; font-size: 24px; font-weight: 700; }
+.subtitulo { opacity: .7; font-size: 13px; }
+.conteudo { max-width: 1040px; margin: 0 auto; padding: 48px 24px; }
+.apresentacao h1 { font: 700 clamp(30px, 5vw, 48px) "Playfair Display", serif; margin: 8px 0; }
+.apresentacao > p:last-child { color: #756a5d; }
+.etiqueta { color: #8b6942; font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .13em; }
+.abas { display: flex; gap: 8px; overflow-x: auto; margin-top: 32px; padding-bottom: 12px; }
+.abas button { border: 1px solid #dcd1c3; background: #fffdf9; padding: 11px 17px; border-radius: 10px; cursor: pointer; white-space: nowrap; }
+.abas button:hover { border-color: #9a744e; }
+.abas button.ativa { background: #62482f; color: white; border-color: #62482f; }
+.painel { padding: 28px; border: 1px solid #e6dbce; border-radius: 18px; min-height: 210px; background: #fffdf9; box-shadow: 0 8px 26px #4030220d; }
+.painel h2 { font: 700 28px "Playfair Display", serif; margin: 0 0 16px; }
+.painel p { color: #746a60; }
+@media (max-width: 560px) { .cabecalho { align-items: flex-start; flex-direction: column; } .conteudo { padding: 30px 16px; } .painel { padding: 20px; } }
